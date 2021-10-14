@@ -1,16 +1,16 @@
 package org.iesfm.airline;
 
+import com.thoughtworks.xstream.annotations.XStreamAlias;
+
 import java.util.List;
 import java.util.Objects;
 
+@XStreamAlias("airline")
+
 public class Airline {
+
     private String name;
     private List<Flight> flights;
-
-    public Airline(String name, List<Flight> flights) {
-        this.name = name;
-        this.flights = flights;
-    }
 
     public String getName() {
         return name;
